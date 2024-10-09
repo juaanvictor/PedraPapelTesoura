@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEDRA PAPEL OU TESOURA</title>
+    <link rel="stylesheet" href="css/jogo.css">
+</head>
+<body>
+ <div id="escolha">
+    <h1>ESCOLHA PEDRA, PAPEL OU TESOURA</h1>
+ </div>
+<div id="PEDRA" class="cursor" onclick="ClicouPedra()">
+    <img id="escolhida" src="pedra.jpg" alt="">
+</div>
+<div id="PAPEL" class="cursor" onclick="ClicouPapel()">
+    <img id="escolhida" src="papel.jpg" alt="">
+</div>
+<div id="TESOURA" class="cursor" onclick="ClicouTesoura()">
+    <img id="escolhida" src="tesoura.jpg" alt="">
+</div>
+
+<div id="interrogacao">
+    <img src="duvida.png" alt="">
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="pedra">
+    <p>PEDRA</p>
+</div>
+
+<div class="papel">
+    <p>PAPEL</p>
+</div>
+
+<div class="tesoura">
+    <p>TESOURA</p>
+</div>
+
+<div class="aleatorio">
+    <p>ALEATÓRIO</p>
+</div>
+
+<br><br><br>
+
+<div id="SeuPlacar">
+    <h2>SEU PLACAR:</h2>
+    <h2 id="PlacarSeu">0</h2>
+</div>
+
+<button id="MaisEu" onmousedown="AumentarEuUm()" onmouseup="ParaAdicaoEu()">+</button>
+
+<div id="PlacarAdversario">
+    <h2>PLACAR COMPUTADOR:</h2>
+    <h2 id="PlacarPC">0</h2>
+</div>
+
+    <button id="MenosEu" onmousedown="DiminuirEuUm()" onmouseup="ParaAdicaoEu()">-</button>
+
+    <button id="MaisRobo" onmousedown="AumentarRoboUm()" onmouseup="ParaAdicaoEu()">+</button>
+
+    <button id="MenosRobo" onmousedown="DiminuirRoboUm()" onmouseup="ParaAdicaoEu()">+</button>
+
+    <button id="Resetar1" onclick="Resetar1()">RESETAR</button>
+
+    <button id="Resetar2" onclick="Resetar2()">RESETAR</button>
+
+<div id="ESCOLHAS"></div>
+
+<!-- ARRUMAR O RETORNO DA FOTO ADVERSÁRIO E COLOCAR CONTADOR COM BOTAO -->
+
+    <script src="js/jogo.js"></script>
+</body>
+</html>

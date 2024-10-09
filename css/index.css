@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+}
+
+button{
+    margin: 5px;
+}
+
+html, body{
+    height: 100%;
+    /* Sempre coloque o html e body com altura de 100% para pegar a tela inteira. */
+}
+
+input{
+    margin: 20px;
+}
+
+select{
+    margin: 20px;
+}
+
+.start{
+    padding: 50px;
+    background: green;
+}
+
+.stop{
+    padding: 50px;
+    background: red;
+}
